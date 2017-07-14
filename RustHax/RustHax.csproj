@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6D1F716B-B3FF-457C-9ADB-52C9905DB0A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RustHax</RootNamespace>
+    <AssemblyName>RustHax</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Rendering.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="Aimbot.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="UpdateObjects.cs" />
+    <Compile Include="LootESP.cs" />
+    <Compile Include="PlayerESP.cs" />
+    <Compile Include="ResourceESP.cs" />
+    <Compile Include="AnimalESP.cs" />
+    <Compile Include="DoorESP.cs" />
+    <Compile Include="CupboardESP.cs" />
+    <Compile Include="CorpseESP.cs" />
+    <Compile Include="HelicopterESP.cs" />
+    <Compile Include="WorldItemESP.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Misc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Behave.Unity.Assets">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Behave.Unity.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Behave.Unity.Runtime">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Behave.Unity.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ConvexHull">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\ConvexHull.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyAntiCheat.Client">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\EasyAntiCheat.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyAntiCheat.Server">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\EasyAntiCheat.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Input">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Raknet">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Raknet.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Rcon.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.System">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.MidEast">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Other">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Rare">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="LZ4">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Tds">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Mono.Data.Tds.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.UI">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Rust.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Workshop">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\Rust.Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="RustBuild">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\RustBuild.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\..\.steam\steam\steamapps\common\Rust\Managed\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="dizzy1">
+      <HintPath>..\..\dizzy1.dll</HintPath>
+    </Reference>
+    <Reference Include="dizzy2">
+      <HintPath>..\..\dizzy2.dll</HintPath>
+    </Reference>
+    <Reference Include="hax3s">
+      <HintPath>..\..\hax3s.dll</HintPath>
+    </Reference>
+    <Reference Include="hax3s 2">
+      <HintPath>..\..\hax3s 2.dll</HintPath>
+    </Reference>
+    <Reference Include="BlackMagic">
+      <HintPath>..\..\BlackMagic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
